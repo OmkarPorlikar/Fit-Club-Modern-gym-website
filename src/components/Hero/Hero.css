@@ -1,0 +1,348 @@
+.orangeGradient{
+background:  rgba(253,120,43,.69); 
+padding: 11rem;
+border-radius: 50%;
+filter: blur(7rem);
+flex: 2;
+position: absolute;
+top: 1rem;
+z-index: 0;
+}
+.hContainer {
+    justify-content: space-between;
+    /* padding: 2rem; */
+    position: relative;
+
+}
+.left-container{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    gap: 2rem;
+
+}
+.title h1 {
+    font-size: 4rem;
+    color: white;
+}
+
+.best-ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    border-radius: 4rem;
+    width: fit-content;
+    padding: 20px 13px;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+    
+}
+
+.best-ad>span{
+    z-index: 2;
+}
+
+ .best-ad>div{
+    position: absolute;
+    background-color: var(--orange);
+    width: 5.4rem;
+    border-radius: 4rem;
+    left: 8px;
+    height: 80%;
+    z-index: 1;
+} 
+ 
+.hero-text{
+    gap: 1.5 rem;
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-overflow: inherit;
+    color: white;
+    z-index: 1;
+
+}
+
+.hero-text>div:nth-of-type(3){
+    font-size: 1rem;
+    letter-spacing: 1px;
+    /*   if we don't use the textTransform this too will became upperCase */
+    text-transform: none;
+    font-weight: 200;
+    width: 80%;
+}
+.figurs{
+    gap: 2rem;
+}
+.figurs>div{
+    display: flex;
+    flex-direction: column;
+}
+/* 
+This line will 1st span from each div */
+.figurs>div>span:nth-of-type(1){
+    color: white;
+    font-size: 2rem;
+}
+
+/* 
+This line will 2st span from each div */
+.figurs>div>span:nth-of-type(2){
+    color: var(--gray);
+    text-transform: uppercase;
+}
+.hero-buttons{
+    gap: 1rem;
+}
+
+.hero-buttons>:nth-child(1){
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+
+.hero-buttons>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+
+
+/* Right Side */
+
+.right-container{
+  position: relative;
+  flex: 1;
+  background-color: var(--orange);
+  height: 41rem;
+}
+.right-container .btn{
+    position: absolute;
+    display: block;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+.heart-logo{
+    width: 2rem;
+    height: 2rem;
+}
+.heart-rate{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: max-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top:  7rem ;
+}
+.heart-rate>:nth-child(2){
+    color: var(--gray);
+}
+.heart-rate>:nth-child(3){
+font-size: 1.5rem;
+}
+
+
+ button{
+    padding: 0.5rem 1rem;
+    color: black;
+    background-color: white;
+border: none;
+font-weight: 500;
+font-size: 1rem;
+}
+
+.right-h>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+  }
+
+.heart-rate{
+ 
+    gap: 1rem;
+    background-color: var(--darkGrey);
+    width: max-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top:  7rem ;
+}
+.heart-rate>img{
+    width: 2rem;
+}
+
+.heart-rate>span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.heart-rate>span:nth-of-type(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hero-image{
+    position: absolute;
+    right: 8rem;
+    top: 10rem;
+    width: 23rem;
+}
+
+.hero-image-back{
+    position: absolute;
+    top: 4rem;
+    right: 20rem;
+    z-index: -1;
+    width: 15rem;
+}
+
+.calories{
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+    padding: 1rem;
+    display: flex;
+    gap: 2rem;
+    background-color: var(--caloryCard);
+    border-radius: 5px;
+    width: max-content;
+}
+
+.calories>img{
+    width: 3rem;
+}
+
+.calories>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.calories>div>:nth-child(1){
+    color: var(--gray);
+}
+
+.calories>div>:nth-child(2){
+    color: white;
+    font-size: 1.5rem;
+}
+
+.blur-h{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+
+@media screen and (max-width :786px) {
+    
+    .hContainer{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .left-container{
+        padding: 2rem;
+        padding-top: 1.5rem;
+        flex: 3;
+        gap: 2rem;
+align-items: center;
+    }
+    .best-ad{
+        margin-top: 2rem;
+        font-size: 12px;
+        padding: 1.2rem 8px;
+        justify-content: center;
+    }
+    
+ .best-ad>div{
+ justify-content: center;
+} 
+ 
+    .hero-text{
+        font-size: 2rem;
+       text-align: center;
+    }
+    .hero-text>div:nth-of-type(3){
+        font-size: 13px;
+        margin: 0 auto;
+        margin-top: 0.7rem;
+    }
+    .figurs{
+        font-size: 12px;
+        flex-wrap: nowrap;
+        text-align: center;
+    }
+    .figurs>div>span:nth-of-type(1) {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .right-container{
+        left: 18rem;
+        margin-bottom: 27rem;
+        margin-top: -7rem;
+      }
+      .right-container .btn{
+right: 10rem;
+width: 7rem;
+margin-top: -2rem;
+top: 8rem;
+}
+      .heart-logo{
+          width: 2rem;
+          height: 2rem;
+      }
+      .hero-image{
+        position: absolute;
+        right: 10rem;
+        top: 10rem;
+        width: 13rem;
+    }
+    
+      .heart-rate{
+      
+          gap: 1rem;
+          padding: 1rem;
+          border-radius: 5px;
+         left: -30.2rem;
+          top:  7rem ;
+          margin-left: 1.5rem;
+      }
+      .heart-rate>:nth-child(2){
+          color: var(--gray);
+      }
+      .heart-rate>:nth-child(3){
+      font-size: 1.5rem;
+      }
+      
+      .hero-image-back{
+         top: 4rem;
+         left: -29rem;
+        z-index: -1;
+        width: 13rem;
+    }
+
+    .calories{
+        top: 29.6rem;
+        left: -29rem;
+        padding: 1rem;
+        margin-left: 1rem;
+    }
+    
+    .calories>img{
+        width: 3rem;
+    }
+    
+    .calories>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    }

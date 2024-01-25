@@ -1,0 +1,105 @@
+.images {
+    /* justify-content: start; */
+    padding: 1.5rem;
+    gap: 0.8rem;
+}
+.allImg{
+    /* gap: 1rem; */
+}
+
+.image1{
+    height: 25rem;
+}
+.image2{
+    height: 14.3rem;
+}
+.twoImg{
+gap: 1rem;
+}
+.image3{
+    height: 10rem;
+
+}
+.image4{
+    height: 10rem;
+
+}
+.left-side{
+gap: 1rem;
+}
+.hero-text{
+    font-size: 3rem;
+}
+.left-side>:nth-child(1){
+    color: var(--orange);
+    font-weight: 700;
+}
+.why-us li{
+display: flex;
+align-items: center;
+gap: 1rem;
+margin-bottom: 1.2rem;
+}
+.why-us li img{
+height: 2rem;
+}
+.why-us li span{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+.partners p{
+    color: var(--gray);
+    margin-bottom: 10px;
+}
+.allLogo img{
+    height: 2rem;
+    margin-left: 0.7rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .twoImg{
+        flex-wrap: nowrap;
+        gap: 1.4rem;
+        }
+        .r-container{
+            padding: 0;
+        }
+}
+
+@media screen and (max-width: 786px){
+    .r-container{
+        flex-direction: column;
+        padding: 2rem;
+    }
+   
+    .image1{
+        height: 16.8rem;
+    }
+    .image2{
+        height: 10rem;
+    }
+    .twoImg{
+    flex-wrap: nowrap;
+    gap: 1.4rem;
+    }
+    .image3{
+        height: 6.6rem;
+    
+    }
+    .image4{
+        height: 6.6rem;
+    
+    }
+    .hero-text{
+        font-size: 1.5rem;
+    }
+    .why-us li span{
+        font-size: 1rem;
+        font-weight: 700;
+        color: white;
+    }
+    .why-us li img {
+        height: 1.6rem;
+    } 
+}

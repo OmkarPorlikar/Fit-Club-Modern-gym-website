@@ -1,0 +1,112 @@
+.plans{
+    margin-top: -4rem;
+    padding: 0 2rem;
+
+    gap: 4rem;
+    position: relative;
+}
+
+
+.plans-card{
+    gap: 3rem;
+    flex-wrap: nowrap;
+}
+
+.plan{
+    background: var(--caloryCard);
+    color: white;
+    gap: 2rem;
+    padding: 1.5rem;
+    width: 16rem;
+    flex-wrap: nowrap;
+}
+
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+
+.plan>svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+
+.plan>:nth-child(2){
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.plan>:nth-child(3){
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.plan>:nth-child(5){
+    font-size: 0.8rem;
+}
+
+.features{
+
+    gap: 1rem;
+}
+
+.feature{
+    gap: 1rem;
+    flex-wrap: nowrap;
+}
+
+.feature>img{
+    width: 1rem;
+}
+
+.plans-card>:nth-child(2)>svg{
+    fill: white;
+}
+
+.plans-card>:nth-child(2)>button{
+    color: orange;
+}
+
+
+.plans-card button {
+    width: 90%;
+text-align: center;
+margin: 0 auto;
+cursor: pointer;
+}
+.plans-card button:hover {
+ transform: scale(1.1);
+ 
+}
+
+.blur-p-1{
+    position: absolute;
+width: 25rem;
+height: 25rem;
+left: 2rem;
+}
+.blur-p-2{
+    position: absolute;
+width: 25rem;
+height: 25rem;
+right: 2rem;
+top: 8rem;
+}
+
+@media screen and (max-width:768px){
+    .plans-card{
+        flex-direction: column;
+    }
+
+    .plans-card>:nth-child(2){
+        transform: none;
+    }
+    .programs-header{
+        display: flex;
+    flex-direction: column;
+    }
+    .plans {
+        margin-top: -8rem;
+    }
+}

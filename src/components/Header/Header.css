@@ -1,0 +1,50 @@
+.logo{
+    width: 10rem;
+    height: 3rem;
+}
+.h-menu{
+    gap: 2rem;
+    list-style: none;
+    color: white;
+    list-style: none;
+}
+.h-wrapper{
+    justify-content: space-between;
+    width: 100%;
+    z-index: 10;
+}
+.h-menu>li:hover{
+    cursor: pointer;
+    color: var(--orange);
+}
+
+.toggleContainer{
+    display: none;
+}
+.toggleButton{
+height: 1rem;
+}
+.hidden{
+    display: none;
+    visibility: none;
+}
+@media screen and (max-width: 786px) {
+ .h-menu{
+    flex-direction: column;
+    background-color: var(--appColor);
+    padding: 2rem;
+    position: fixed;
+    top: 4rem;
+    z-index: 9999;
+    right: 2rem;
+ } 
+ .toggleContainer{
+    display: block;
+    background-color: var(--appColor);
+    padding: 6px;
+    position: fixed;
+    right: 2rem;
+    margin-bottom: 1rem;
+}
+
+}
